@@ -4,12 +4,12 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:layout_margin="4dp">
+    android:layout_margin="@dimen/margin_4">
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:padding="8dp">
+        android:padding="@dimen/margin_8">
 
         <TextView
             android:id="@+id/from"
@@ -33,17 +33,17 @@
 
         <ImageView
             android:id="@+id/cityIconStart"
-            android:layout_width="28dp"
-            android:layout_height="28dp"
+            android:layout_width="@dimen/size_28"
+            android:layout_height="@dimen/size_28"
             android:src="@drawable/city_blue"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@id/from" />
 
         <ImageView
             android:id="@+id/dates"
-            android:layout_width="28dp"
-            android:layout_height="28dp"
-            android:layout_marginTop="12dp"
+            android:layout_width="@dimen/size_28"
+            android:layout_height="@dimen/size_28"
+            android:layout_marginTop="@dimen/margin_12"
             android:src="@drawable/calendar"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@id/cityIconStart" />
@@ -52,10 +52,10 @@
             android:id="@+id/datesText"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="4dp"
-            android:layout_marginTop="12dp"
+            android:layout_marginStart="@dimen/margin_4"
+            android:layout_marginTop="@dimen/margin_12"
             android:fontFamily="@font/roboto_slab"
-            android:textSize="14sp"
+            android:textSize="@dimen/text_14"
             app:layout_constraintStart_toEndOf="@id/dates"
             app:layout_constraintTop_toBottomOf="@id/cityFrom"
             tools:text="Вылет   12.02.2023\nJбратно 14.02.2023" />
@@ -63,17 +63,17 @@
         <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="28dp"
+            android:layout_marginTop="@dimen/size_28"
             android:background="@drawable/rounded_dotted"
             android:orientation="vertical"
-            android:padding="8dp"
+            android:padding="@dimen/margin_8"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toBottomOf="@id/cityIconEnd">
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginBottom="8dp"
+                android:layout_marginBottom="@dimen/margin_8"
                 android:fontFamily="@font/roboto_slab"
                 android:text="@string/like"
                 android:textSize="14sp" />
@@ -94,8 +94,8 @@
             android:id="@+id/cityFrom"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="8dp"
-            android:textSize="14sp"
+            android:layout_marginTop="@dimen/margin_8"
+            android:textSize="@dimen/text_14"
             app:layout_constraintStart_toEndOf="@id/cityIconStart"
             app:layout_constraintTop_toBottomOf="@id/from"
             tools:text="Уфа" />
@@ -104,18 +104,18 @@
             android:id="@+id/cityTo"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="4dp"
-            android:layout_marginTop="8dp"
-            android:textSize="14sp"
+            android:layout_marginStart="@dimen/margin_4"
+            android:layout_marginTop="@dimen/margin_8"
+            android:textSize="@dimen/text_14"
             app:layout_constraintStart_toEndOf="@id/cityIconEnd"
             app:layout_constraintTop_toBottomOf="@id/to"
             tools:text="Москва" />
 
         <ImageView
             android:id="@+id/planeIcon"
-            android:layout_width="20dp"
-            android:layout_height="20dp"
-            android:layout_marginTop="8dp"
+            android:layout_width="@dimen/size_20"
+            android:layout_height="@dimen/size_20"
+            android:layout_marginTop="@dimen/margin_8"
             android:src="@drawable/plane_black"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
@@ -123,8 +123,8 @@
 
         <ImageView
             android:id="@+id/cityIconEnd"
-            android:layout_width="28dp"
-            android:layout_height="28dp"
+            android:layout_width="@dimen/size_28"
+            android:layout_height="@dimen/size_28"
             android:src="@drawable/city_blue"
             app:layout_constraintEnd_toStartOf="@id/cityTo"
             app:layout_constraintStart_toEndOf="@id/planeIcon"
@@ -134,7 +134,7 @@
             android:id="@+id/priceHeading"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="16dp"
+            android:layout_marginTop="@dimen/margin_16"
             android:fontFamily="@font/roboto_slab"
             android:text="@string/price"
             app:layout_constraintStart_toStartOf="parent"
@@ -142,9 +142,9 @@
 
         <ImageView
             android:id="@+id/walletIcon"
-            android:layout_width="24dp"
-            android:layout_height="24dp"
-            android:layout_marginTop="10dp"
+            android:layout_width="@dimen/size_24"
+            android:layout_height="@dimen/size_24"
+            android:layout_marginTop="@dimen/margin_10"
             android:src="@drawable/wallet_blue"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@id/priceHeading" />
@@ -153,9 +153,9 @@
             android:id="@+id/price"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
-            android:layout_marginStart="10dp"
-            android:layout_marginTop="10dp"
-            android:textSize="20sp"
+            android:layout_marginStart="@dimen/margin_10"
+            android:layout_marginTop="@dimen/margin_10"
+            android:textSize="@dimen/text_20"
             app:layout_constraintStart_toEndOf="@id/walletIcon"
             app:layout_constraintTop_toBottomOf="@id/priceHeading"
             tools:text="5000" />

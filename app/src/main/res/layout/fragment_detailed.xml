@@ -3,7 +3,7 @@
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:padding="24dp"
+    android:padding="@dimen/margin_24"
     android:background="@drawable/back_gradient"
     android:gravity="center_horizontal">
 
@@ -12,11 +12,11 @@
         android:layout_height="wrap_content"
         android:text="@string/chosen"
         android:fontFamily="@font/roboto_slab"
-        android:textSize="24sp"
+        android:textSize="@dimen/text_20"
         android:textStyle="bold"/>
 
     <include android:id="@+id/oneFlight"
-        android:layout_marginTop="24dp"
+        android:layout_marginTop="@dimen/margin_24"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         layout="@layout/item_flight"/>
@@ -25,7 +25,7 @@
         android:id="@+id/backButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
+        android:layout_marginTop="@dimen/margin_16"
         android:background="@android:color/transparent"
         android:contentDescription="@string/go_back"
         android:src="@drawable/back_blue" />
