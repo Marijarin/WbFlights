@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="4dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="8dp">
+
+        <TextView
+            android:id="@+id/from"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/roboto_slab"
+            android:text="@string/from"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/to"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/roboto_slab"
+            android:text="@string/to"
+            app:layout_constraintBottom_toTopOf="@id/cityIconEnd"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/from"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/cityIconStart"
+            android:layout_width="28dp"
+            android:layout_height="28dp"
+            android:src="@drawable/city_blue"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/from" />
+
+        <ImageView
+            android:id="@+id/dates"
+            android:layout_width="28dp"
+            android:layout_height="28dp"
+            android:layout_marginTop="12dp"
+            android:src="@drawable/calendar"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/cityIconStart" />
+
+        <TextView
+            android:id="@+id/datesText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="4dp"
+            android:layout_marginTop="12dp"
+            android:fontFamily="@font/roboto_slab"
+            android:textSize="14sp"
+            app:layout_constraintStart_toEndOf="@id/dates"
+            app:layout_constraintTop_toBottomOf="@id/cityFrom"
+            tools:text="Вылет   12.02.2023\nJбратно 14.02.2023" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="28dp"
+            android:background="@drawable/rounded_dotted"
+            android:orientation="vertical"
+            android:padding="8dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/cityIconEnd">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:fontFamily="@font/roboto_slab"
+                android:text="@string/like"
+                android:textSize="14sp" />
+
+            <com.google.android.material.checkbox.MaterialCheckBox
+                android:id="@+id/like"
+                style="@style/CheckBox"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:backgroundTint="@android:color/transparent"
+                android:button="@drawable/heart_tint"
+                android:checkable="true"
+                app:iconSize="48dp" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/cityFrom"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:textSize="14sp"
+            app:layout_constraintStart_toEndOf="@id/cityIconStart"
+            app:layout_constraintTop_toBottomOf="@id/from"
+            tools:text="Уфа" />
+
+        <TextView
+            android:id="@+id/cityTo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="4dp"
+            android:layout_marginTop="8dp"
+            android:textSize="14sp"
+            app:layout_constraintStart_toEndOf="@id/cityIconEnd"
+            app:layout_constraintTop_toBottomOf="@id/to"
+            tools:text="Москва" />
+
+        <ImageView
+            android:id="@+id/planeIcon"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginTop="8dp"
+            android:src="@drawable/plane_black"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/from" />
+
+        <ImageView
+            android:id="@+id/cityIconEnd"
+            android:layout_width="28dp"
+            android:layout_height="28dp"
+            android:src="@drawable/city_blue"
+            app:layout_constraintEnd_toStartOf="@id/cityTo"
+            app:layout_constraintStart_toEndOf="@id/planeIcon"
+            app:layout_constraintTop_toBottomOf="@id/to" />
+
+        <TextView
+            android:id="@+id/priceHeading"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:fontFamily="@font/roboto_slab"
+            android:text="@string/price"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/dates" />
+
+        <ImageView
+            android:id="@+id/walletIcon"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/wallet_blue"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/priceHeading" />
+
+        <TextView
+            android:id="@+id/price"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:textSize="20sp"
+            app:layout_constraintStart_toEndOf="@id/walletIcon"
+            app:layout_constraintTop_toBottomOf="@id/priceHeading"
+            tools:text="5000" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</com.google.android.material.card.MaterialCardView>

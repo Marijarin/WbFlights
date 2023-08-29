@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">Time To Travel</string>
+    <string name="heading">Пора в путешествие!</string>
+    <string name="choose">Выбери свое направление</string>
+    <string name="from">Отправление</string>
+    <string name="to">Прибытие</string>
+    <string name="price">Стоимость: рубли</string>
+    <string name="chosen">Выбранный маршрут</string>
+    <string name="go_back">Назад</string>
+    <string name="like">Нравится? Отметь!</string>
+    <string name="dates">Туда.........%1$s\nОбратно.%2$s</string>
+    <string name="error_loading">Не удалось загрузить перелеты</string>
+    <string name="retry_loading">Перезагрузить</string>
+</resources>
