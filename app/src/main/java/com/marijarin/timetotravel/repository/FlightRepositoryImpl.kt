@@ -7,7 +7,6 @@ import com.marijarin.timetotravel.dto.Flights
 import com.marijarin.timetotravel.entity.FlightEntity
 import com.marijarin.timetotravel.entity.toEntity
 import kotlinx.coroutines.Dispatchers
-import kotlinx.coroutines.delay
 import kotlinx.coroutines.flow.Flow
 import kotlinx.coroutines.withContext
 import java.io.IOException

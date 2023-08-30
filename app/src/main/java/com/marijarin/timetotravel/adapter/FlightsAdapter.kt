@@ -1,6 +1,5 @@
 package com.marijarin.timetotravel.adapter
 
-import android.icu.text.SimpleDateFormat
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.DiffUtil
@@ -9,9 +8,7 @@ import androidx.recyclerview.widget.RecyclerView
 import com.marijarin.timetotravel.R
 import com.marijarin.timetotravel.databinding.ItemFlightBinding
 import com.marijarin.timetotravel.dto.Flight
-import com.marijarin.timetotravel.util.Utils
 import com.marijarin.timetotravel.util.Utils.toDate
-import java.util.Locale
 
 interface OnFlightListener {
     fun goToFlight(flight: Flight) {}

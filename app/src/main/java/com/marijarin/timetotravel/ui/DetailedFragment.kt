@@ -10,9 +10,7 @@ import androidx.navigation.fragment.findNavController
 import com.google.gson.Gson
 import com.marijarin.timetotravel.R
 import com.marijarin.timetotravel.databinding.FragmentDetailedBinding
-import com.marijarin.timetotravel.databinding.FragmentListBinding
 import com.marijarin.timetotravel.dto.Flight
-import com.marijarin.timetotravel.dto.Flights
 import com.marijarin.timetotravel.util.Utils.toDate
 import com.marijarin.timetotravel.viewModel.FlightViewModel
 import dagger.hilt.android.AndroidEntryPoint
